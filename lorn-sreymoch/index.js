@@ -14,7 +14,7 @@ let score = 99.9;
 
 const isLoggedln = Yes;
 
-let emails = [sopheak.men@pse.ngo, siemhong.em@pse.ngo];
+let emails = ["sopheak.men@pse.ngo", "siemhong.em@pse.ngo"];
 
 let userlnfo = {id:(1), username:("vannda"), isAcivated:("ture")};
 
@@ -34,7 +34,7 @@ let fruitsList = [banana , apple , pineapple , mango];
 
 if student = "pt" , 90 = "Excellent"{
     else 70 = "Goode job"
-}
+};
 
 // Function
 
