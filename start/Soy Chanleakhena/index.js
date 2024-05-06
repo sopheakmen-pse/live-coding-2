@@ -32,27 +32,26 @@ function getTotalPrice(nbOfBanana,nbOfOrnage){
 console.log(getTotalPrice(2,2));
 console.log(getTotalPrice(1,3));
 
-let a = 1;
-let b = 2;
-let c = 3;
+
 function sumNumbers(numbers) {
-   return(a+b+c);
-  }
-  console.log(sumNumbers(1,2,3));
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum;
+}
+const numbers1= [1, 2, 3];
+const numbers2 =[5,10,15,20];
+const numbers3 = [2,4,6,8,10];
+const numbers4 = [3];
+console.log(sumNumbers(numbers1)); 
+console.log(sumNumbers(numbers2));
+console.log(sumNumbers(numbers3));
+console.log(sumNumbers(numbers4));
+console.log(sumNumbers(0));
 
 
-
-
-// Acessing Array item
-
-
-
-
-// Length of numbers: 5
-// First element of numbers: 0
-// Last element of numbers: 5
-// Element at index 2 of numbers: 3
-
+// Object
 const weatherData = {
     location: {
     name: "Boston",
@@ -97,6 +96,14 @@ gust_kph: 15.4,
 console.log("Location:",weatherData.location.name,",",weatherData.location.region,",",weatherData.location.country,);
 console.log("Temperature (c):",weatherData.current.temp_c);
 console.log("Humidity:",weatherData.current.humidity,"%");
-console.log("Feel like temperater:",weatherData.current.feelslike_c);
+console.log("Feels Like Temperater (c):",weatherData.current.feelslike_c);
 console.log("Condition:",weatherData.current.condition.text);
 console.log("UV Index:",weatherData.current.uv);
+
+
+// Acessig Array item
+const numbers = [1, 2, 3, 4, 5];
+console.log("Length of numbers:", numbers.length);
+console.log("First element of numbers:", numbers[0]);
+console.log("Last element of numbers:", numbers[numbers.length - 1]);
+console.log("Element at index 2 of numbers:", numbers[2]);
