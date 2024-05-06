@@ -1,37 +1,51 @@
+//Test skill2 level2 point1
 //Variables & Data Types
 let studentName = "Mararika";
+console.log("My name:",studentName);
 let age = 17;
+console.log("Age:",age);
 let isStudent = true;
+console.log("I'm a student:",isStudent);
 let subject = ["WMAD","English","Environment","Life Skill"];
-let schoolName = "SoB";
+console.log("Subject:",subject);
+let schoolName = "School Of Business";
+console.log("School name:",schoolName);
 let classroomNumber = 13;
+console.log("Classroom:",classroomNumber);
 let isMorningClass = true;
+console.log("Morning class:",isMorningClass);
 let friends = ["Vorleak","SreyMoch","Leakhena"];
+console.log("Friends:",friends);
 let teacher = {
     id : "0001",
     fullname : "Em Siemhong",
     age : 34,
     numberOfExperience : "10 years",
 };
+console.log("Teacher:",teacher);
 let favoriteSubject = "Environment";
+console.log("Favorite subject:",favoriteSubject);
 
-//function
+//function1
 function getTotalPrice (nbOfBanana,nbOfOrange) {
-    bananaPrice = 0.5;
-    orangePrice = 2;
-    let totalPrice = ((bananaPrice*nbOfBanana)+(orangePrice*nbOfOrange));
-    console.log(totalPrice(2,2));
+    let bananaPrice = 0.5;
+    let orangePrice = 2;
+    let totalPrice = (bananaPrice*nbOfBanana)+(orangePrice*nbOfOrange);
     return totalPrice;
 }
+console.log(getTotalPrice(2,2));
+console.log(getTotalPrice(1,3));
 
-function sumNumbers (numbers,numbers,numbers){
-    let sum = numbers,numbers,numbers;
-    console.log(sum(1,2,3));
-    console.log(sum(5,10,15,20));
-    console.log(sum(2,4,6,8,10));
-    console.log(sum(3));
-    console.log(sum());
+//function2
+function sum(...numbers) {
+    return numbers.reduce((a, b) => a + b, 0);
 }
+console.log("Expected output:",sum(1, 2, 3)); 
+console.log("Expected output:",sum(5, 10, 15, 20)); 
+console.log("Expected output:",sum(2, 4, 6, 8, 10)); 
+console.log("Expected output:",sum(3)); 
+console.log("Expected output:",sum(),"No parameters"); 
+
 
 //object
 const weatherData = {
@@ -81,3 +95,9 @@ console.log("Humidity:", weatherData.current.humidity,"%");
 console.log("Feels Like Temperature (C):",weatherData.current.feelslike_c);
 console.log("Condition:",weatherData.current.condition.text);
 console.log("UV Index:",weatherData.current.uv);
+
+const numbers = [1, 2, 3, 4, 5];
+console.log("Length Of numbers:",numbers[4]);
+console.log("First element of numbers:",numbers[0]);
+console.log("Last element of numbers:",numbers[4]);
+console.log("Element at index 2 of numbers:",numbers[2]); 
